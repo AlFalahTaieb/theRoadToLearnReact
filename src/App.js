@@ -83,13 +83,7 @@ class App extends Component {
   }
 
   onSearchSubmit(event) {
-    // axios.get('https://www.reddit.com/r/GoneWildHairy/top.json', { responseType: 'json' }).then(response => {
-    //   const tab = (response.data.data.children)
-    //   console.log(tab)
-    //   for (let i = 0; i < tab.length; i++) {
-    //     console.log(tab[i].data.url)
-    //   }
-    // });
+
     const { searchTerm } = this.state;
     this.setState({ searchKey: searchTerm })
     if (this.needToSearchTopStories(searchTerm)) {
